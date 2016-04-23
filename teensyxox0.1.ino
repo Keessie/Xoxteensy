@@ -86,8 +86,8 @@ byte midiChannel;
 */
 // control and display mode stuff
 byte viewMode[2] = {0, 0}; // first number is the page, second is the subpage
-const char* controlsRot[][5] = {{"OSC", "Tune", "Saw/Square", "Slide", "Tune LFO"}, { "", "", "", "", ""}, {"Slide ADSR", "Attack", "Decay", "Sustain", "Release"},  {"Tune LFO", "Frequency", "Depth", "Shape", " "}, {"Filter", "Cutoff", "Cutoff LFO", "Envmod", "Envmod LFO"}, {"Cutoff LFO", "Frequency", "Depth", "Shape", " "}, {"Cutoff ADSR", "Attack", "Decay", "Sustain", "Release"}, {"Envmod LFO", "Frequency", "Depth", "Shape", " "}, {"Amp", "Decay", "Accent", "Volume", "Amp LFO"}, {"Accent ADSR", "Attack", "Decay", "Sustain", "Release"}, {"Amp ADSR", "Attack", "Decay", "Sustain", "Release"}, {"Amp LFO", "Frequency", "Depth", "Shape", " "}, { "", "", "", "", ""}, { "", "", "", "", ""}, { "", "", "", "", ""}, { "", "", "", "", ""}};
-const char* controlsBut[][4] = {{"back", " ", "Slide ADSR", "Tune LFO"}, {"back", "Cutoff LFO", "Cutoff ADSR", "Envmod LFO"}, {"back", "Accent ADSR", "Amp ADSR", "Amp LFO"}, { "", "", "", ""}};
+const char* controlsRot[][5] = {{"OSC", "Tune", "Saw/Square", "Slide", "Tune LFO"}, { "", "", "", "", ""}, {"Slide ADSR", "Attack", "Decay", "Sustain", "Release"},  {"Tune LFO", "Freq", "Depth", "Shape", " "}, {"Filter", "Cutoff", "Cutoff LFO", "Envmod", "Envmod LFO"}, {"Cutoff LFO", "Freq", "Depth", "Shape", " "}, {"Cutoff ADSR", "Attack", "Decay", "Sustain", "Release"}, {"Envmod LFO", "Freq", "Depth", "Shape", " "}, {"AMP", "Decay", "Accent", "Volume", "Amp LFO"}, {"Accent ADSR", "Attack", "Decay", "Sustain", "Release"}, {"Amp ADSR", "Attack", "Decay", "Sustain", "Release"}, {"Amp LFO", "Freq", "Depth", "Shape", " "}, { "", "", "", "", ""}, { "", "", "", "", ""}, { "", "", "", "", ""}, { "", "", "", "", ""}};
+const char* controlsBut[][4] = {{"OSC", " ", "Slide ADSR", "Tune LFO"}, {"Filter", "Cutoff LFO", "Cutoff ADSR", "Envmod LFO"}, {"AMP", "Accent ADSR", "Amp ADSR", "Amp LFO"}, { "Presets", "Load", "Save", ""}};
 
 // main array where all controls are stored: 1st; viewmode [0] | 2nd; viewmode [1] | 3rd actual rotary controlled parameters
 byte controls[4][4][4];
